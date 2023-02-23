@@ -1,0 +1,447 @@
+#tophead {
+    color: white;
+    background-color: #E40613;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+    height: 45px;
+    margin-bottom: 0px;
+}
+
+.small {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#big {
+    padding-inline: 32px;
+    letter-spacing: 2.5px;
+}
+
+#top {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 247, 246);
+}
+
+#tops {
+    width: 100%;
+    background-color: rgb(248, 247, 246);
+
+    margin-top: 0px;
+}
+
+#tophead1 {
+    margin-bottom: 23px;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    padding-inline: 100px;
+    align-items: center;
+    margin-top: 22px;
+    font-size: 18px;
+}
+
+#tophead1 a {
+    text-decoration: none;
+    color: rgb(110, 106, 106);
+}
+
+#tophead1 i {
+    padding-right: 10px;
+}
+
+#topimg {
+    padding-top: 5px;
+}
+
+#topimg img {
+    width: 110px;
+}
+
+#topcontainer {
+    width: 70%;
+    margin: auto;
+}
+
+#topscontainer {
+    background-color: rgb(248, 247, 246);
+    width: 100%;
+}
+
+.d-flex button {
+    color: rgb(119, 118, 118);
+    border: 1px solid rgb(196, 195, 195);
+}
+
+#btn :hover {
+    background-color: #E40613;
+
+}
+
+#toporder {
+    width: 70%;
+    margin: auto;
+}
+
+.mont {
+    display: flex;
+    justify-content: space-between;
+}
+
+#digital1 {
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 42px;
+}
+
+#digital2 {
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.kack {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.mack {
+    margin-top: 15px;
+}
+
+.kack1 {
+    margin-top: 35px;
+    margin-right: 40px;
+
+}
+
+.mack1 {
+    margin-top: 35px;
+
+}
+
+#ccmm {
+    margin-right: 30px;
+    color: rgb(43, 0, 255);
+}
+
+#mmcc {
+    color: rgb(43, 0, 255);
+}
+
+#digital3 {
+    margin-left: 50px;
+    font-size: 56px;
+    margin-right: 120px;
+    font-weight: 600;
+
+}
+
+#tyre {
+    display: flex;
+}
+
+#myre {
+    width: 70%;
+    /* background-color: #8ab9e8; */
+}
+
+#vp3 {
+    width: 100%;
+    /* margin: auto; */
+    /* border: 10px solid rgb(227, 223, 223); */
+    margin-bottom: 30px;
+    height: 380px;
+    border-bottom: 2px solid grey;
+    margin-left: 30px;
+    position: relative;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
+
+}
+
+.bjnj {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    margin: auto;
+}
+
+.calvin {
+    margin: 30px;
+    font-size: 20px;
+}
+
+.bjnj div img {
+    width: 180px;
+    height: 210px;
+    margin: 20px;
+}
+
+.calvin p {
+    margin: 10px;
+    color: rgb(54, 104, 241);
+}
+
+.toto button {
+    /* padding: 5px; */
+    font-size: 25px;
+    margin: 40px 0px 10px 0px;
+    width: 30px;
+    border: 1px solid rgb(157, 141, 141);
+    border-radius: 5px;
+    display: inline;
+    background-color: #f2f2f2;
+}
+
+#price {
+    margin: 50px 70px 0px 0px;
+}
+
+.kdkd {
+    font-size: 18px;
+
+}
+
+.kdkd1 {
+    font-size: 15px;
+
+}
+
+.savesave {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #0060BF;
+    /* border: 2px solid black; */
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.savesave:hover {
+    background-color: white;
+    color: #0060BF;
+    cursor: pointer;
+    border: none;
+
+}
+
+#klenkeln img {
+    width: 50px;
+    height: 50px;
+}
+
+.omom {
+    /* border: 2px solid red; */
+    padding: 5px;
+    height: 90px;
+    display: flex;
+}
+
+.omom div img {
+    width: 85%;
+    margin-left: 110px;
+}
+
+#addadd {
+    padding: 10px;
+    background-color: #0060BF;
+    /* border: 2px solid black; */
+    font-size: 15px;
+    color: white;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    margin: 27px 90px 10px 10px;
+}
+
+#price img {
+    width: 40px;
+    height: 40px;
+    margin-top: 100px;
+}
+
+.priceprice {
+    font-size: 19px;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    background-color: #006b9d;
+    margin-top: -17px;
+    margin-left: 5px;
+}
+
+
+
+/* -----------------------------------------------next part------------------------------------------------------------- */
+
+
+#vp4 {
+    width: 30%;
+    height: 600px;
+    margin-left: 80px;
+    margin-right: 100px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+.semsem img {
+    width: 100%;
+}
+
+.semsem {
+    width: 85%;
+    display: block;
+    margin: auto;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.lenlen {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#lenlenalg {
+    font-size: 18px;
+    margin: 20px 33px 20px 0;
+}
+
+.lenlen23 {
+    font-size: 25px;
+    margin: 20px 0 20px 33px;
+    font-weight: 600;
+}
+
+.lenlen24,
+#len2424 {
+    font-size: 18px;
+    margin: 20px 33px 20px 0;
+}
+
+#checkcheck {
+    width: 85%;
+    display: block;
+    margin: auto;
+    height: 50px;
+    padding: 12px;
+    font-size: 21px;
+    color: white;
+    background: linear-gradient(180deg, #fc5d37 0%, #ed5132 49%, #e64525 100%);
+    border: none;
+    font-weight: 600;
+}
+
+#mkmkmk {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#nknknk {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.kkkk img {
+    width: 100%;
+}
+
+#samesame {
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+#ngngng {
+    color: #0060BF;
+}
+
+#samesame1 {
+    padding-top: 5px;
+    padding-left: 200px;
+}
+
+.afterdelete1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.afterbutton {
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+.afterbutton:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#emptyCart {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0060BF;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cartCard {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.cartCard h3 {
+    font-size: 40px;
+}
+
+.cartCard h4 {
+    font-size: 30px;
+}
+
+.cartCard h5 {
+    font-size: 20px;
+}
+
+.cartCard button {
+    background-color: #E40613;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.cartCard button:hover {
+    background-color: #ffffff;
+    color: #E40613;
+    border: 1px solid red;
+}
+
+.calcal {
+    font-size: 40px;
+    padding-inline: 10px;
+    color: #0060BF;
+}

@@ -6,6 +6,8 @@ const productSchema = mongoose.Schema({
    description:String,
    price:Number,
    delivery_In:Number
+},{
+   versionKey:false
 })
 const productModel = mongoose.model("post",productSchema)
 module.exports = {productModel}

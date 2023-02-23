@@ -1,0 +1,506 @@
+#tophead {
+    color: white;
+    background-color: #E40613;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+    height: 45px;
+    margin-bottom: 0px;
+}
+
+.small {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#big {
+    padding-inline: 32px;
+    letter-spacing: 2.5px;
+}
+
+#top {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 247, 246);
+}
+
+#tops {
+    width: 100%;
+    background-color: rgb(248, 247, 246);
+
+    margin-top: 0px;
+}
+
+#tophead1 {
+    margin-bottom: 23px;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    padding-inline: 100px;
+    align-items: center;
+    margin-top: 22px;
+    font-size: 18px;
+}
+
+#tophead1 a {
+    text-decoration: none;
+    color: rgb(110, 106, 106);
+}
+
+#tophead1 i {
+    padding-right: 10px;
+}
+
+#topimg {
+    padding-top: 5px;
+}
+
+#topimg img {
+    width: 110px;
+}
+
+#topcontainer {
+    width: 70%;
+    margin: auto;
+}
+
+#topscontainer {
+    background-color: rgb(248, 247, 246);
+    width: 100%;
+}
+
+.d-flex button {
+    color: rgb(119, 118, 118);
+    border: 1px solid rgb(196, 195, 195);
+}
+
+#btn :hover {
+    background-color: #E40613;
+
+}
+
+#toporder {
+    width: 70%;
+    margin: auto;
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&family=Lilita+One&family=Nunito:wght@200&family=Rubik+Puddles&display=swap%27);"); */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body{
+   font-family: 'Nunito', sans-serif;
+} */
+
+.mainhead {
+    width: 100%;
+    /* height: 180px; */
+    border: 2px solid black;
+    /* background-color: rgb(60, 227, 224); */
+    /* background-image: linear-gradient( to left, rgb(182, 200, 182) ,rgb(61, 208, 199)); */
+}
+
+
+
+
+
+.subhead {
+    display: flex;
+}
+
+.vp1 {
+    /* border: 2px solid red; */
+    width: 15%;
+    /* margin: auto; */
+    /* height: 1200px; */
+    margin-left: 50px;
+}
+
+/* ----------------------------------------------------------vp2 part------------------------------------------------------------------ */
+.vp2 {
+    /* border: 2px solid black; */
+    width: 75%;
+    /* margin: auto; */
+    height: 1950px;
+    margin-left: 60px;
+}
+
+#digital {
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#digital:hover {
+    color: #E40613;
+}
+
+#cash {
+    margin-left: 50px;
+}
+
+#mash {
+    color: #E40613;
+}
+
+#mash:hover {
+    color: #51a094;
+    cursor: pointer;
+}
+
+#cate {
+    font-weight: 500;
+    font-size: 26px;
+    color: #6e6d6d;
+}
+
+.none1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #E40613;
+}
+.mone1 {
+    font-size: 26px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #686565;
+    font-weight: 500;
+}
+
+#mone200,
+#mone201,
+#mone202,
+#mone203,
+#mone204 {
+    margin-left: 25px;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    color: #E40613;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#mone200:hover,
+#mone201:hover,
+#mone202:hover,
+#mone203:hover,
+#mone204:hover {
+    cursor: pointer;
+    color: #fe0000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+#mmss1,
+#mmss2,
+#mmss3,
+#mmss4,
+#mmss5,
+#mmss6,
+#mmss7,
+#mmss8,
+#mmss9,
+#mmss10,
+#mmss11,
+#mmss12,
+#mmss13 {
+    display: block;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: white;
+    margin-bottom: 5px;
+    border: none;
+    color: #E40613;
+}
+
+#mmss1:hover,
+#mmss2:hover,
+#mmss3:hover,
+#mmss4:hover,
+#mmss5:hover,
+#mmss6:hover,
+#mmss7:hover,
+#mmss8:hover,
+#mmss9:hover,
+#mmss10:hover,
+#mmss11:hover,
+#mmss12:hover,
+#mmss13:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+#kkss1,
+#kkss2,
+#kkss3,
+#kkss4 {
+    display: block;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: white;
+    margin-bottom: 5px;
+    border: none;
+    color: #E40613;
+}
+
+#kkss1:hover,
+#kkss2:hover,
+#kkss3:hover,
+#kkss4:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+
+#ssss1,
+#ssss2,
+#ssss3,
+#ssss4 {
+    display: block;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: white;
+    margin-bottom: 5px;
+    border: none;
+    color: #E40613;
+}
+
+#ssss1:hover,
+#ssss2:hover,
+#ssss3:hover,
+#ssss4:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+#inp-1 {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#inp-1::placeholder {
+    font-size: 15px;
+    color: #798185;
+}
+
+.nmnm {
+    color: #798185;
+    margin-right: 5px;
+}
+
+.ces {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #706f6f;
+}
+
+#mone22,
+#mone221,
+#mone222,
+#mone223,
+#mone224,
+#mone225,
+#mone226,
+#mone227,
+#mone228,
+#mone229 {
+    display: block;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: none;
+    color: #E40613;
+    font-weight: 500;
+}
+
+#mone22:hover,
+#mone221:hover,
+#mone222:hover,
+#mone223:hover,
+#mone224:hover,
+#mone225:hover,
+#mone226:hover,
+#mone227:hover,
+#mone228:hover,
+#mone229:hover {
+    cursor: pointer;
+    /* background-image: linear-gradient(to left, #419df3 ,#00478a , #7da1c1); */
+    color: #000000;
+}
+
+
+
+#monemone23,
+#monemone24,
+#monemone25,
+#monemone26,
+#monemone27,
+#monemone28 {
+    display: block;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: none;
+    color: #E40613;
+}
+
+#came1 {
+    display: inline;
+    width: 39px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#came2 {
+    display: inline;
+    width: 39px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#proc {
+    padding: 10px;
+}
+
+option {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#storage {
+    padding: 10px;
+}
+
+
+
+/* This is vp2  */
+
+#subsub {
+    width: 100%;
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E40613;
+}
+#st1 {
+    margin-left: 15px;
+    margin-top: 7px;
+    color: white;
+}
+
+#sub1 {
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+#st2 div img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+#st2 {
+    display: flex;
+}
+
+#totalitem {
+    margin-left: 500px;
+    color: white;
+}
+
+
+#image1:hover {
+    cursor: pointer;
+}
+
+#image2:hover {
+    cursor: pointer;
+}
+
+/* -------------------------------------main fetch prodects-------------------------------------------------------------------- */
+
+#cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 15px; */
+    justify-content: space-around;
+    border: 15px solid #F2F2F2;
+    margin-top: 30px;
+    /* background-color: ; */ 
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------media query part------------------ */
+@media only screen and (max-width: 1300px) and (min-width: 817px) {
+
+    #cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 817px) and (min-width: 0px) {
+
+   #cont {
+       grid-template-columns: repeat(1, 1fr);
+   }
+   .vp1{
+       display: none;
+   }
+
+
+}
+.cards{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 20px;
+    
+}
+.cards button{
+    background-color: #E40613;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    padding-inline: 8px;
+    color: whitesmoke;
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+.cards button:hover{
+    background-color: #ffffff;
+    color: #E40613;
+    border: 1px solid red;
+}
+.cards h3{
+    font-size: 30px;
+    color: #4e5050;
+    padding-left: 20px;
+}
+.cards p{
+    font-size: 20px;
+padding-left: 20px;
+}
+.cards img{
+    width: 70%;
+    
+}

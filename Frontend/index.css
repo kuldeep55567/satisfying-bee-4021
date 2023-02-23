@@ -270,6 +270,9 @@
 .lastcard{
 text-align: center;
 }
+#hname{
+    padding-top: 15px;
+}
 .lastcard button{
     background-color: white;
     margin-top: 15px;

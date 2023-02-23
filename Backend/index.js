@@ -1,7 +1,7 @@
 const express = require("express");
 const {connection} = require("./config/db")
 const { userRouter } = require("./routes/userRoute");
-// const { productRouter } = require("./routes/productRoute");
+const { productRouter } = require("./routes/productRoute");
 const { authenticate } = require("./middleware/auth");
 const cors = require("cors")
 require("dotenv").config();
@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.use("/users",userRouter)
 app.use(authenticate)
-// app.use("/",productRouter)
+app.use("/products",productRouter)
 app.listen(process.env.port,async ()=>{
     try {
         await connection

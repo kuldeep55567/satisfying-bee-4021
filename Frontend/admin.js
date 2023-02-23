@@ -82,3 +82,38 @@ update.addEventListener("click", () => {
     section.style.display = "none";
     container2.style.display = "block";
 })
+let form = document.getElementById("form");
+let baseURL = "http://localhost:4500/products";
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    let name = document.getElementById("name").value;
+    let image = document.getElementById("image").value;
+    let category = document.getElementById("category").value;
+    let description = document.getElementById("description").value;
+    let price = document.getElementById("price").value;
+    let delivery = document.getElementById("delivery").value;
+    fetch(`${baseURL}/add`, {
+        method: 'POST',
+        body: JSON.stringify({
+            name: name,
+            image: image,
+            category: category,
+            description: description,
+            price: price,
+            delivery_In: delivery
+        }),
+        headers: {
+            "Content-type": "application/json; carset=UTF-8",
+            "Authorization":localStorage.getItem("token"),
+
+        }
+    })
+        .then(function (res) {
+            return res.json();
+        })
+        .then(function (data) {
+            console.log(data)
+            // display(data)
+        })
+})
+let formDelete = document.getElementById("form1");
