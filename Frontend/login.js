@@ -38,3 +38,6 @@ function mainPage() {
     popup.classList.remove("open-popup")
     location.href = "index.html";
 }
+let name = localStorage.getItem('name')
+    let ename = document.getElementById("hname");
+    ename.innerText = "Hello ," + name;

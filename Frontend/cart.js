@@ -81,6 +81,9 @@ function display(data) {
     container.append(card);
   });
 }
+let name = localStorage.getItem('name')
+    let ename = document.getElementById("hname");
+    ename.innerText = "Hello ," + name;
 let orderComplete = document.getElementById("checkcheck")
 orderComplete.addEventListener("click",()=>{
 alert("Thanks for Shopping Visit again")

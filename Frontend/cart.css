@@ -295,7 +295,9 @@
 .semsem img {
     width: 100%;
 }
-
+#hname{
+    padding-top: 15px;
+}
 .semsem {
     width: 85%;
     display: block;

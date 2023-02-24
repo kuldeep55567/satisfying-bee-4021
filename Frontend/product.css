@@ -17,7 +17,9 @@
     padding-inline: 32px;
     letter-spacing: 2.5px;
 }
-
+#hname{
+    padding-top: 15px;
+}
 #top {
     width: 80%;
     margin: auto;

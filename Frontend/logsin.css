@@ -19,7 +19,9 @@ h1{
     border-radius: 5px;
     font-size: 33px;
 }
-
+#hname{
+    padding-top: 15px;
+}
 #form ::placeholder {
     font-size: 35px;
     color: grey;
