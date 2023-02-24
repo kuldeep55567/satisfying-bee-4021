@@ -16,3 +16,6 @@ const onSignUp = () => {
         .then(res => console.log(res))
         .catch(err => console.log(err))
 }
+let name = localStorage.getItem('name')
+    let ename = document.getElementById("hname");
+    ename.innerText = "Hello ," + name;
