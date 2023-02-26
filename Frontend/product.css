@@ -34,7 +34,12 @@
 
     margin-top: 0px;
 }
-
+.none1:hover{
+    cursor: pointer;
+}
+.moreBtn{
+    display: none;
+}
 #tophead1 {
     margin-bottom: 23px;
     display: flex;
