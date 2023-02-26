@@ -1,4 +1,4 @@
-fetch("http://localhost:4500/products/search/all", {
+fetch("http://localhost:4500/products", {
   headers: {
     "Authorization": localStorage.getItem("token")
   },
@@ -8,8 +8,9 @@ fetch("http://localhost:4500/products/search/all", {
     display(res)
   })
   .catch(err => {
-    // location.href = "login.html",
-    // alert("Log in First")
+      location.href = "login.html",
+      alert("Log in First")
+console.log(err)
   })
 let men = document.getElementById("mone200")
 let women = document.getElementById("mone201")
@@ -19,7 +20,7 @@ let category = document.getElementById("categories")
 let producties = document.getElementById("products")
 let container = document.getElementById("cont")
 men.addEventListener("click", () => {
-  fetch("http://localhost:4500/products/shoes", {
+  fetch(`http://localhost:4500/products?category=shoes`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -29,12 +30,11 @@ men.addEventListener("click", () => {
       display(res)
     })
     .catch(err => {
-      // location.href = "login.html",
-      // alert("Log in First")
+    console.log(err)
     })
 })
 women.addEventListener("click", () => {
-  fetch("http://localhost:4500/products/heels", {
+  fetch(`http://localhost:4500/products?category=heels`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -49,7 +49,7 @@ women.addEventListener("click", () => {
     })
 })
 kids.addEventListener("click", () => {
-  fetch("http://localhost:4500/products/kids", {
+  fetch(`http://localhost:4500/products?category=kids`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -64,7 +64,7 @@ kids.addEventListener("click", () => {
     })
 })
 originals.addEventListener("click", () => {
-  fetch("http://localhost:4500/products/allTrek", {
+  fetch(`http://localhost:4500/products?category=allTrek`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -79,7 +79,7 @@ originals.addEventListener("click", () => {
     })
 })
 producties.addEventListener("click", () => {
-  fetch("http://localhost:4500/products/", {
+  fetch("http://localhost:4500/products", {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -94,7 +94,24 @@ producties.addEventListener("click", () => {
     })
 })
 category.addEventListener("click", () => {
-  fetch("http://localhost:4500/products/", {
+  fetch("http://localhost:4500/products", {
+    headers: {
+      "Authorization": localStorage.getItem("token")
+    },
+  }).then(res => res.json())
+    .then(res => {
+      console.log(res)
+      display(res)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+})
+let searchTab = document.getElementById("searchtab")
+let search = document.getElementById("search")
+search.addEventListener("click", (e) => {
+  e.preventDefault()
+  fetch(`http://localhost:4500/products?search=${searchTab.value}`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -106,26 +123,55 @@ category.addEventListener("click", () => {
     .catch(err => {
       // location.href = "login.html",
       // alert("Log in First")
+      console.log(err)
     })
-})
-let searchTab = document.getElementById("searchtab")
-let search = document.getElementById("search")
-search.addEventListener("click", () => {
-  // fetch(`http://localhost:4500/products/search/${searchTab.value}`, {
-  //   headers: {
-  //     "Authorization": localStorage.getItem("token")
-  //   },
-  // }).then(res => res.json())
-  //   .then(res => {
-  //     console.log(res)
-  //     display(res)
-  //   })
-  //   .catch(err => {
-  //     // location.href = "login.html",
-  //     // alert("Log in First")
-  //   })
   console.log(searchTab.value)
 })
+let sub1 = document.getElementById("sub1")
+sub1.addEventListener("change", () => {
+    let value = sub1.value
+    if (value == "Low to High") {
+      fetch(`http://localhost:4500/products?sort=1}`, {
+        headers: {
+          "Authorization": localStorage.getItem("token")
+        },
+      }).then(res => res.json())
+        .then(res => {
+          console.log(res)
+          display(res)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+      console.log(searchTab.value)
+    } else if (value == "High to Low") {
+      fetch(`http://localhost:4500/products?sort=-1`, {
+        headers: {
+          "Authorization": localStorage.getItem("token")
+        },
+      }).then(res => res.json())
+        .then(res => {
+          console.log(res)
+          display(res)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    }else if(value=="Popular Results"){
+      fetch("http://localhost:4500/products", {
+        headers: {
+          "Authorization": localStorage.getItem("token")
+        },
+      }).then(res => res.json())
+        .then(res => {
+          console.log(res)
+          display(res)
+        })
+        .catch(err => {
+      console.log(err)
+        })
+    }
+  })
 function display(data) {
   container.innerHTML = null
   data.forEach((el) => {
@@ -143,17 +189,9 @@ function display(data) {
     delivery_in.innerText = "Delivered in : - " + el.delivery_In + " Days";
     let rating = document.createElement("p");
     rating.innerText = "Rating : -" + "⭐⭐⭐⭐";
-    let description = document.createElement("p");
+    let description = document.createElement("details");
     description.setAttribute("class", "moreBtn")
     description.innerText = el.description;
-    let dots = document.createElement("button");
-    dots.innerText = "Description"
-    dots.style.backgroundColor = "green"
-    dots.style.fontSize = "20px"
-    dots.style.marginLeft = "20px"
-    dots.addEventListener("click", () => {
-      description.style.display = "inline"
-    })
     let btn = document.createElement("button");
     btn.innerText = "Add to Cart"
     btn.addEventListener("click", () => {
@@ -175,7 +213,7 @@ function display(data) {
       }
 
     })
-    card.append(image, name, category, price, delivery_in, rating, dots, description, btn)
+    card.append(image, name, category, price, delivery_in, rating, description, btn)
     container.append(card)
   })
 }

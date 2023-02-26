@@ -13,7 +13,11 @@ const onSignUp = () => {
         },
         body: JSON.stringify(payload)
     }).then(res => res.json())
-        .then(res => console.log(res))
+        .then(res => {
+            console.log(res)
+        alert("Sign Up successfull")
+        location.href = "login.html"
+        })
         .catch(err => console.log(err))
 }
 let name = localStorage.getItem('name')

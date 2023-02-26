@@ -15,7 +15,7 @@ const onlogin = () => {
             localStorage.setItem("token", res.token)
             localStorage.setItem("admin", res.admin)
             localStorage.setItem("name", res.name)
-            if (localStorage.getItem("admin") == 1) {
+            if (localStorage.getItem("admin") >= 1) {
                 popup.classList.add("open-popup")
             } else if( (localStorage.getItem("admin") == 0)) {
                 location.href = "index.html"
