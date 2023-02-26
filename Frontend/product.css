@@ -38,7 +38,8 @@
     cursor: pointer;
 }
 .moreBtn{
-    display: none;
+    font-size: 20px;
+    margin-left: 20px;
 }
 #tophead1 {
     margin-bottom: 23px;

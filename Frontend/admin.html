@@ -4,13 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="admin.css">
-	<title>AdminHub</title>
+	<title>Admin Panel</title>
 </head>
+
 <body>
 	<!-- SIDEBAR -->
 	<section id="sidebar">
@@ -23,12 +23,6 @@
 				<a href="admin.html">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Dashboard</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-shopping-bag-alt'></i>
-					<span class="text">My Store</span>
 				</a>
 			</li>
 			<li>
@@ -46,7 +40,7 @@
 			<li>
 				<a href="#">
 					<i class='bx bxs-group'></i>
-					<span class="text">Team</span>
+					<span class="text" id="team">Team</span>
 				</a>
 			</li>
 		</ul>
@@ -60,15 +54,12 @@
 			<li>
 				<a href="#" class="logout">
 					<i class='bx bxs-log-out-circle'></i>
-					<span class="text">Logout</span>
+					<span class="text" id="logout">Logout</span>
 				</a>
 			</li>
 		</ul>
 	</section>
 	<!-- SIDEBAR -->
-
-
-
 	<!-- CONTENT -->
 	<section id="content">
 		<!-- NAVBAR -->
@@ -88,7 +79,7 @@
 				<span class="num">8</span>
 			</a>
 			<a href="#" class="profile">
-				<img src="img/people.png">
+				<img src="/Frontend/images/WhatsApp Image 2023-02-07 at 16.21.22.jpeg">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -109,8 +100,20 @@
 				</div>
 				<a href="#" class="btn-download">
 					<i class='bx bxs-cloud-download'></i>
-					<span class="text">Download PDF</span>
+					<span class="text">Documentation</span>
 				</a>
+			</div>
+			<div class="child" id="aboutme">
+				<img src="/Frontend//images/WhatsApp Image 2023-02-07 at 16.21.22.jpeg" alt="">
+				<h1>Name : - Kuldeep Tiwari</h1>
+				<h2>Role : - Full Stack Web Developer</h2>
+				<h3>ABOUT : -</h3>
+				<div id="write">
+				<p>I am a passionate Full Stack Web Developer and currently focusing on backend things and doing my backend specialization from node.js. This is a clone of clarksusa website which has many changes and customized accroding to my needs.</p>
+				<p>This project is completely made by me and It took around 14 hours per day for 5 days to complete this website.</p>
+				<p>Updates Coming Soon.......</p>
+				<a href="https://www.linkedin.com/in/kuldeep-tiwari-a3637923a/" target="_blank">Join Me on Linkdin</a>
+			</div>
 			</div>
 			<div id="container" class="child">
 				<main>
@@ -152,21 +155,39 @@
                         </div>
                     </form>
                 </main>
-            </div>
-			<div id=" container1" class="child">
+				</div>
+			<div id="container1" class="child">
 								<h2>Product Management
 								</h2>
 								<form id="form1">
 									<div class="form-group">
 										<label for="fname">ID:</label>
 										<br>
-										<input type="number" name="fname" id="ids" placeholder="Enter ID of Product"
+										<input type="text" name="fname" id="ids" placeholder="Enter ID of Product"
 											required>
 									</div>
 									<div class="form-group">
 										<button type="submit">Delete Product</button>
 									</div>
 								</form>
+						</div>
+						<div id="userUpdate" class="child">
+							<h2>Admin Update</h2>
+							<form id="formUser">
+								<div class="form-group">
+									<label for="fname">USER-ID:</label>
+									<br>
+									<input type="text" name="fname" id="userId" placeholder="Enter ID of User" required>
+								</div>
+								<div class="form-group">
+									<label for="fname">Admin Role:</label>
+									<br>
+									<input type="number" name="fname" id="userRole" placeholder="Admin Level" required>
+								</div>
+								<div class="form-group">
+									<button type="submit">Update Role</button>
+								</div>
+							</form>
 						</div>
 						<div id="container2" class="child">
 							<main>
@@ -175,7 +196,7 @@
 									<div class="form-group">
 										<label for="fname">ID of Product :</label>
 										<br>
-										<input type="number" name="pwd1" id="idu" placeholder="ID" required>
+										<input type="text" name="pwd1" id="idu" placeholder="ID" required>
 									</div>
 									<div class="form-group">
 										<label for="fname">Image:</label>
@@ -218,21 +239,21 @@
 								<li>
 									<i class='bx bxs-calendar-check'></i>
 									<span class="text">
-										<h3>1020</h3>
+										<h3>3</h3>
 										<p>New Order</p>
 									</span>
 								</li>
 								<li>
 									<i class='bx bxs-group'></i>
 									<span class="text">
-										<h3>2834</h3>
+										<h3>28</h3>
 										<p>Visitors</p>
 									</span>
 								</li>
 								<li>
 									<i class='bx bxs-dollar-circle'></i>
 									<span class="text">
-										<h3>$2543</h3>
+										<h3>$1620</h3>
 										<p>Total Sales</p>
 									</span>
 								</li>
@@ -240,7 +261,7 @@
 							<div class="table-data">
 								<div class="order">
 									<div class="head">
-										<h3>Recent Orders</h3>
+										<h3>Recent Users</h3>
 										<i class='bx bx-search'></i>
 										<i class='bx bx-filter'></i>
 									</div>
@@ -248,52 +269,13 @@
 										<thead>
 											<tr>
 												<th>User</th>
-												<th>Date Order</th>
+												<th>Email-ID</th>
 												<th>Status</th>
+												<th>Details</th>
 											</tr>
 										</thead>
-										<!-- <tbody>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Completed</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">Pending</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status process">Process</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status pending">Pending</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td><span class="status completed">Completed</span></td>
-							</tr>
-						</tbody> -->
+										<tbody id="tbody">
+										</tbody>
 									</table>
 								</div>
 								<div class="todo">

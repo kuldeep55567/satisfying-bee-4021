@@ -100,7 +100,7 @@ form.addEventListener("submit", (e) => {
         }),
         headers: {
             "Content-type": "application/json; carset=UTF-8",
-            "Authorization":localStorage.getItem("token"),
+            "Authorization": localStorage.getItem("token"),
         }
     })
         .then(function (res) {
@@ -111,4 +111,126 @@ form.addEventListener("submit", (e) => {
             // display(data)
         })
 })
-let formDelete = document.getElementById("form1");
+//UPDATE METHOD
+let form2 = document.getElementById("form2");
+form2.addEventListener("submit", (e) => {
+    e.preventDefault()
+    let idu = document.getElementById("idu").value;
+    let nameu = document.getElementById("nameu").value;
+    let imageu = document.getElementById("imageu").value;
+    let categoryu = document.getElementById("categoryu").value;
+    let descriptionu = document.getElementById("descriptionu").value;
+    let priceu = document.getElementById("priceu").value;
+    let deliveryu= document.getElementById("deliveryu").value;
+    fetch(`${baseURL}/update/${idu}`, {
+        method: 'PATCH',
+        body: JSON.stringify({
+            name: nameu,
+            image: imageu,
+            category: categoryu,
+            description: descriptionu,
+            price: priceu,
+            delivery_In: deliveryu
+        }),
+        headers: {
+            "Content-type": "application/json; carset=UTF-8",
+            "Authorization": localStorage.getItem("token"),
+        }
+    })
+        .then(function (res) {
+            return res.json();
+        })
+        .then(function (data) {
+            console.log(data)
+            // display(data)
+        })
+})
+//DELETE METHOD
+
+let form1 = document.getElementById("form1")
+form1.addEventListener("submit", (e) => {
+    e.preventDefault()
+    let ids = document.getElementById("ids").value;
+    let options = {
+        method: "DELETE"
+    }
+    fetch(`${baseURL}/delete/${ids}`, options)
+        .then(response => console.log(response.status))
+
+})
+// USERS DATA FOR ADMIN
+
+fetch("http://localhost:4500/users")
+    .then(res =>res.json())
+    .then(res => {
+        console.log(res)
+    displayUsers(res)
+    })
+let tbody = document.getElementById("tbody")
+function displayUsers(user) {
+    user.reverse().forEach((el) => {
+        let tr = document.createElement("tr");
+        let td = document.createElement("td");
+        let inTd = document.createElement("p");
+        inTd.innerText = el.name;
+        let td1 = document.createElement("td");
+        td1.innerText = el.email;
+        let td2 = document.createElement("td")
+        let span = document.createElement("span")
+        span.innerText = el.is_admin;
+        let details = document.createElement("details");
+      details.innerText = "hello for now"
+        td.append(inTd)
+        td2.append(span)
+        tr.append(td,td1,td2,details)
+        tbody.append(tr)
+    })
+}
+let logout = document.getElementById("logout")
+logout.addEventListener("click",()=>{
+    location.href = "index.html"
+})
+let adminUpdate = document.getElementById("userUpdate")
+let adminControl = document.getElementById("adminc");
+adminControl.addEventListener("click",()=>{
+    if(localStorage.getItem("admin")==2){
+        section.style.display = "none";
+        crud.innerText = "CRUD Operations";
+        cr.innerText = "Admin Role";
+        adminUpdate.style.display = "block";
+    }else{
+        alert("You Are Not Authorized ")
+    }
+})
+let formUser = document.getElementById("formUser");
+formUser.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let userID = document.getElementById("userId");
+    let userRole = document.getElementById("userRole");
+    fetch(`http://localhost:4500/users/update/${userID.value}`,{
+        method:'PATCH',
+        body:JSON.stringify({
+            is_admin:userRole.value
+        }),
+        headers:{
+            "Content-type":"application/json",
+            "Authorization": localStorage.getItem("token")
+        }
+    })
+    .then(res => res.json())
+    .then(res => {
+        console.log(res)
+        alert(`Role Updated`)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+})
+let team = document.getElementById("team")
+let about = document.getElementById("aboutme")
+team.addEventListener("click",()=>{
+    section.style.display = "none";
+    crud.innerText = "ABOUT";
+    cr.innerText = "About me";
+    about.style.display = "block";
+})
