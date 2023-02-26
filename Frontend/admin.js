@@ -10,10 +10,6 @@ allSideMenu.forEach(item => {
         li.classList.add('active');
     })
 });
-
-
-
-
 // TOGGLE SIDEBAR
 const menuBar = document.querySelector('#content nav .bx.bx-menu');
 const sidebar = document.getElementById('sidebar');
@@ -105,7 +101,6 @@ form.addEventListener("submit", (e) => {
         headers: {
             "Content-type": "application/json; carset=UTF-8",
             "Authorization":localStorage.getItem("token"),
-
         }
     })
         .then(function (res) {

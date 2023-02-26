@@ -1,8 +1,40 @@
 const express = require("express");
 const {productModel} = require("../model/productModel")
 const productRouter = express.Router();
+productRouter.get("/:id",async(req,res)=>{
+  let Id = req.params.id
+try {
+  res.send( await productModel.find({category:Id}))
+} catch (error) {
+  res.send({"error":error.message})
+}
+})
 productRouter.get("/",async(req,res)=>{
+try {
+  res.send( await productModel.find())
+} catch (error) {
+  res.send({"error":error.message})
+}
+})
+productRouter.get("/search/:key", async(req,res)=>{
+  let key = req.params.key
+try {
+  if(key==="all"){
     res.send( await productModel.find())
+  }else{
+    let data = await productModel.find(
+      {
+        "$or":[
+          {name:{$regex:key}}
+        ]
+      }
+    )
+    res.send(data)
+  }
+  
+} catch (error) {
+  
+}
 })
 productRouter.post("/add", async(req,res)=>{
     try {
