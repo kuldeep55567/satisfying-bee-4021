@@ -3,7 +3,7 @@ const onlogin = () => {
         email: document.getElementById("email").value,
         password: document.getElementById("password").value
     }
-    fetch("http://localhost:4500/users/login", {
+    fetch("https://distinct-pink-moth.cyclic.app/users/login", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
