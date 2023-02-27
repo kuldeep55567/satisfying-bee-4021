@@ -1,4 +1,4 @@
-fetch("http://localhost:4500/products", {
+fetch("https://distinct-pink-moth.cyclic.app/products", {
   headers: {
     "Authorization": localStorage.getItem("token")
   },
@@ -20,7 +20,7 @@ let category = document.getElementById("categories")
 let producties = document.getElementById("products")
 let container = document.getElementById("cont")
 men.addEventListener("click", () => {
-  fetch(`http://localhost:4500/products?category=shoes`, {
+  fetch(`https://distinct-pink-moth.cyclic.app/products?category=shoes`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -34,7 +34,7 @@ men.addEventListener("click", () => {
     })
 })
 women.addEventListener("click", () => {
-  fetch(`http://localhost:4500/products?category=heels`, {
+  fetch(`https://distinct-pink-moth.cyclic.app/products?category=heels`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -49,7 +49,7 @@ women.addEventListener("click", () => {
     })
 })
 kids.addEventListener("click", () => {
-  fetch(`http://localhost:4500/products?category=kids`, {
+  fetch(`https://distinct-pink-moth.cyclic.app/products?category=kids`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -64,7 +64,7 @@ kids.addEventListener("click", () => {
     })
 })
 originals.addEventListener("click", () => {
-  fetch(`http://localhost:4500/products?category=allTrek`, {
+  fetch(`https://distinct-pink-moth.cyclic.app/products?category=allTrek`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -79,7 +79,7 @@ originals.addEventListener("click", () => {
     })
 })
 producties.addEventListener("click", () => {
-  fetch("http://localhost:4500/products", {
+  fetch("https://distinct-pink-moth.cyclic.app/products", {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -94,7 +94,7 @@ producties.addEventListener("click", () => {
     })
 })
 category.addEventListener("click", () => {
-  fetch("http://localhost:4500/products", {
+  fetch("https://distinct-pink-moth.cyclic.app/products", {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -111,7 +111,7 @@ let searchTab = document.getElementById("searchtab")
 let search = document.getElementById("search")
 search.addEventListener("click", (e) => {
   e.preventDefault()
-  fetch(`http://localhost:4500/products?search=${searchTab.value}`, {
+  fetch(`https://distinct-pink-moth.cyclic.app/products?search=${searchTab.value}`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },
@@ -131,7 +131,7 @@ let sub1 = document.getElementById("sub1")
 sub1.addEventListener("change", () => {
     let value = sub1.value
     if (value == "Low to High") {
-      fetch(`http://localhost:4500/products?sort=1}`, {
+      fetch(`https://distinct-pink-moth.cyclic.app/products?sort=1}`, {
         headers: {
           "Authorization": localStorage.getItem("token")
         },
@@ -145,7 +145,7 @@ sub1.addEventListener("change", () => {
         })
       console.log(searchTab.value)
     } else if (value == "High to Low") {
-      fetch(`http://localhost:4500/products?sort=-1`, {
+      fetch(`https://distinct-pink-moth.cyclic.app/products?sort=-1`, {
         headers: {
           "Authorization": localStorage.getItem("token")
         },
@@ -158,7 +158,7 @@ sub1.addEventListener("change", () => {
           console.log(err)
         })
     }else if(value=="Popular Results"){
-      fetch("http://localhost:4500/products", {
+      fetch("https://distinct-pink-moth.cyclic.app/products", {
         headers: {
           "Authorization": localStorage.getItem("token")
         },

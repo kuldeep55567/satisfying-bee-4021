@@ -6,7 +6,7 @@ const onSignUp = () => {
         email: document.getElementById("email").value,
         password: document.getElementById("password").value,
     }
-    fetch("http://localhost:4500/users/register", {
+    fetch("https://distinct-pink-moth.cyclic.app/users/register", {
         method: "POST",
         headers: {
             "Content-type": "application/json"

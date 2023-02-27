@@ -8,7 +8,7 @@ let searchTab = document.getElementById("search")
 search.addEventListener("click", (e) => {
   e.preventDefault()
   location.href = "product.html"
-  fetch(`http://localhost:4500/products?search=${searchTab.value}`, {
+  fetch(`https://distinct-pink-moth.cyclic.app/products?search=${searchTab.value}`, {
     headers: {
       "Authorization": localStorage.getItem("token")
     },

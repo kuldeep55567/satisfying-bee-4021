@@ -79,7 +79,7 @@ update.addEventListener("click", () => {
     container2.style.display = "block";
 })
 let form = document.getElementById("form");
-let baseURL = "http://localhost:4500/products";
+let baseURL = "https://distinct-pink-moth.cyclic.app/products";
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     let name = document.getElementById("name").value;
@@ -160,7 +160,7 @@ form1.addEventListener("submit", (e) => {
 })
 // USERS DATA FOR ADMIN
 
-fetch("http://localhost:4500/users")
+fetch("https://distinct-pink-moth.cyclic.app/users")
     .then(res =>res.json())
     .then(res => {
         console.log(res)
@@ -207,7 +207,7 @@ formUser.addEventListener("submit",(e)=>{
     e.preventDefault();
     let userID = document.getElementById("userId");
     let userRole = document.getElementById("userRole");
-    fetch(`http://localhost:4500/users/update/${userID.value}`,{
+    fetch(`https://distinct-pink-moth.cyclic.app/users/update/${userID.value}`,{
         method:'PATCH',
         body:JSON.stringify({
             is_admin:userRole.value
