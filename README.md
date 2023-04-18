@@ -1,5 +1,5 @@
 # satisfying-bee-4021
-BACKEND :-----
+BACKEND :----- https://cute-lab-coat-mite.cyclic.app/
 
 
 I am using EXPRESS for server,node for run-time enviorment, Database is mongoDB Atlas,and many more npm Packages.
@@ -14,10 +14,9 @@ b. User Route
 And many subroutes are there according to need.
 
 
-FRONTEND :-----
+FRONTEND :----- https://frolicking-axolotl-b0d1a6.netlify.app/index.html
 =>Deployed on Netlify
 Pages
-LINK - https://frolicking-axolotl-b0d1a6.netlify.app/index.html
 .....
 a.Admin panel
 b.Home Page
