@@ -17,6 +17,7 @@ And many subroutes are there according to need.
 FRONTEND :-----
 =>Deployed on Netlify
 Pages
+LINK - https://frolicking-axolotl-b0d1a6.netlify.app/index.html
 .....
 a.Admin panel
 b.Home Page
