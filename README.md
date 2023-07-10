@@ -26,8 +26,7 @@ Check out the live demo of Clarks Original at [Demo Link](https://frolicking-axo
 - HTML
 - CSS
 - JavaScript
-- React
-- Redux
+- Localstorage
 - Axios
 
 ### Features
