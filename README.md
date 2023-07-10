@@ -37,7 +37,9 @@ Follow the steps below to run Clarks Original locally:
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-Features
+
+
+###Features
 User Registration: Users can create an account with their name, email, gender, age, and password.
 User Login: Registered users can log in to their accounts securely.
 Product Browsing: Users can browse and search for products based on keywords, categories, and price range.
