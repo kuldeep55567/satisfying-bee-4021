@@ -31,11 +31,11 @@ Check out the live demo of Clarks Original at [Demo Link](https://frolicking-axo
 - Axios
 
 ### Features
-User Registration: Users can create an account with their name, email, gender, age, and password.
-User Login: Registered users can log in to their accounts securely.
-Product Browsing: Users can browse and search for products based on keywords, categories, and price range.
-Product Management: Admin users can add, update, and delete products from the inventory.
-User Role Management: Admin users can update the roles of other users.
+- User Registration: Users can create an account with their name, email, gender, age, and password.
+- User Login: Registered users can log in to their accounts securely.
+- Product Browsing: Users can browse and search for products based on keywords, categories, and price range.
+- Product Management: Admin users can add, update, and delete products from the inventory.
+- User Role Management: Admin users can update the roles of other users.
 
 ## Installation and Usage
 
